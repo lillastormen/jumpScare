@@ -1,0 +1,45 @@
+:root {
+  --blood: #9d0b00;
+  --ooze: #450544;
+  --goo: #85cb33;
+  --darkness: #030303;
+  --hope: #ecebe4;
+}
+
+body {
+  background-color: var(--darkness);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Shippori Mincho", serif;
+  color: var(--hope);
+}
+
+header {
+  background-image: url("./SVG/header_mobile.svg");
+  width: 100vw;
+  height: 92px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+  z-index: 2;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+}
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.hero {
+  width: 90vw;
+}
+/* TODO: constrain svg-headers to resize and fit horizontally, 
+add class to img tags or manipulate monthly- and offer-divs  */
