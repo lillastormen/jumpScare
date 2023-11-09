@@ -1,0 +1,19 @@
+.info2 { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "buy"
+      "times";
+    grid-area: info2;
+}
+  
+.buy { 
+    grid-area: buy; 
+}
+  
+.times { 
+    grid-area: times; 
+}
