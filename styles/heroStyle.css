@@ -27,7 +27,7 @@ body {
 }
 
 .tickets {
-    padding: 20px;
+    padding-top: 25px;
 }
 
 button {
@@ -50,7 +50,7 @@ button {
 }
 
 .movieInfo {
-    padding: 0 12px 0 12px;
+    padding: 0 12px 25px 12px;
 }
 
 .movieInfo h3, p {
@@ -59,19 +59,12 @@ button {
 
 .moviePictures {
     overflow: auto;
-}
-
-.picture1,
-.picture2,
-.picture3,
-.picture4,
-.picture5 {
-    width: 100%px;
-    height: auto;
+    max-width: 100%;
+    height: auto; 
 }
 
 .theDeadlySpawn {
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .newsletterForm {
@@ -100,11 +93,15 @@ button {
 }
 
 .socials {
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .footerInfo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+}
+
+footer {
+    padding: 0 12px 25px 12px;
 }
