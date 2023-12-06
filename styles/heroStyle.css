@@ -30,21 +30,27 @@ body {
     padding: 20px;
 }
 
-.button {
+.redButton {
     background-color: var(--blood);
     width: 330px;
     height: 50px;
     border: none;
     border-radius: 10px;
     align-items: center;
-    display: inline-block;
-   
-   
+    display: inline-block;  
 }
 
 .ticketsButton {
     width: 95px;
     height: 35px;
+}
+
+.movieInfo {
+    padding: 0 12px 0 12px;
+}
+
+.movieInfo h3, p {
+    display: inline-block;
 }
 
 .moviePictures {
@@ -58,4 +64,29 @@ body {
 .picture5 {
     width: 100%px;
     height: auto;
+}
+
+.theDeadlySpawn {
+    padding-top: 20px;
+}
+
+
+.newsletterForm {
+    margin: 0;
+}
+
+.input,
+.greenButton {
+    display: inline-block;
+}
+.input{
+    height: 35px;
+    margin: 0;
+}
+
+.greenButton {
+    width: 100px;
+    height: 53px;
+    border-radius: 15px;
+    background-color: var(--goo);
 }

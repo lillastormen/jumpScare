@@ -49,6 +49,10 @@
 
 .movieDates {
   grid-area: movieDates;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .footer {
