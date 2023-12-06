@@ -1,0 +1,25 @@
+.container {
+    width: 100vh;
+}
+
+.header-content {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem;
+    padding-left: 0.5rem;  
+}
+
+
+.heroImage {
+    background-image: url("SVG/header_mobile.svg");
+  width: 100vw;
+  height: 92px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+  z-index: 2;
+}
