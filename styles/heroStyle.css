@@ -22,7 +22,8 @@ body {
 }
 
 .heroImage {
-    width: 90vw;
+    width: 100vw;
+    height: auto;
   }
 
 .moviePictures {
@@ -34,6 +35,6 @@ body {
 .picture3,
 .picture4,
 .picture5 {
-    width: 130px;
-    height: 150px;
+    width: 100%px;
+    height: auto;
 }
