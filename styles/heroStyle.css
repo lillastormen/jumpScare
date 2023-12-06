@@ -1,25 +1,39 @@
-.container {
-    width: 100vh;
+body {
+    background-color: var(--darkness);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Shippori Mincho", serif;
+    color: var(--hope);
 }
 
-.header-content {
-    max-width: 1200px;
+.headerContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.2rem;
-    padding-left: 0.5rem;  
+    padding-left: 0.5rem;
+  }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
 }
 
-
 .heroImage {
-    background-image: url("SVG/header_mobile.svg");
-  width: 100vw;
-  height: 92px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding: 0px;
-  margin: 0px;
-  z-index: 2;
+    width: 90vw;
+  }
+
+.moviePictures {
+    overflow: auto;
+}
+
+.picture1,
+.picture2,
+.picture3,
+.picture4,
+.picture5 {
+    width: 130px;
+    height: 150px;
 }
