@@ -27,6 +27,8 @@
 
 .tickets {
   grid-area: tickets;
+  display: flex;
+  justify-content: center;
 }
 
 .movieInfo {

@@ -24,7 +24,28 @@ body {
 .heroImage {
     width: 100vw;
     height: auto;
-  }
+}
+
+.tickets {
+    padding: 20px;
+}
+
+.button {
+    background-color: var(--blood);
+    width: 330px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    display: inline-block;
+   
+   
+}
+
+.ticketsButton {
+    width: 95px;
+    height: 35px;
+}
 
 .moviePictures {
     overflow: auto;
