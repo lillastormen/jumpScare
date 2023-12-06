@@ -30,6 +30,9 @@ body {
     padding: 20px;
 }
 
+button {
+    cursor: pointer;
+}
 .redButton {
     background-color: var(--blood);
     width: 330px;
@@ -70,23 +73,21 @@ body {
     padding-top: 20px;
 }
 
-
 .newsletterForm {
-    margin: 0;
-}
-
-.input,
-.greenButton {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
 }
 .input{
-    height: 35px;
+    height: 30px;
+    width: 200px;
     margin: 0;
 }
 
 .greenButton {
-    width: 100px;
-    height: 53px;
-    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
     background-color: var(--goo);
 }
