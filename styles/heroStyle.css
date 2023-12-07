@@ -11,8 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.2rem;
-    padding-left: 0.5rem;
+    padding: 0 12px 0 12px;
     position: relative;
   }
 
@@ -21,7 +20,6 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 0;
-
 }
 
 .heroImage {
@@ -83,14 +81,16 @@ button {
 .picture3,
 .picture4,
 .picture5 {
-    float: left;
-    width: 20;
     height: 30vh;
     object-fit: cover;
 }
 
 .theDeadlySpawn {
     padding-top: 25px;
+}
+
+.theDeadlySpawnLogo {
+    padding-bottom: 20px;
 }
 
 .newsletterForm {
