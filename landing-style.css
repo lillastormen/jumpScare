@@ -6,19 +6,13 @@
   --hope: #ecebe4;
 }
 
-@keyframes drip {
+/* @keyframes scare {
   0% {
   }
-  50% {
-    background: linear-gradient(#de1a3a 50%, #050e0e 50%);
-  }
-  75% {
-    background: linear-gradient(#de1a3a 75%, #050e0e 25%);
-  }
   100% {
-    background: linear-gradient(#de1a3a 50%, #050e0e 50%);
+    transform: scale(6) translateX(-7vw) translateY(5vw);
   }
-}
+} */
 body {
   background-color: var(--darkness);
   margin: 0px;
@@ -46,6 +40,9 @@ header {
   padding: 0.2rem;
   padding-left: 0.5rem;
 }
+/* .logo {
+  animation: 1s scare reverse;
+} */
 .heroContainer {
   display: flex;
   align-items: center;
@@ -54,6 +51,16 @@ header {
 }
 .hero {
   width: 90vw;
+}
+a {
+  text-decoration: none;
+  color: var(--hope);
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--blood);
+    transition: 1s;
+  }
 }
 .below-hero {
   display: flex;
