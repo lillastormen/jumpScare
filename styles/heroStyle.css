@@ -4,6 +4,7 @@ body {
     padding: 0px;
     font-family: "Shippori Mincho", serif;
     color: var(--hope);
+   
 }
 
 .headerContent {
@@ -12,6 +13,7 @@ body {
     justify-content: space-between;
     padding: 0.2rem;
     padding-left: 0.5rem;
+    position: relative;
   }
 
 .hero {
@@ -19,12 +21,24 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 0;
+
 }
 
 .heroImage {
     width: 100vw;
     height: auto;
 }
+
+header {
+    width: 100vw;
+    height: 92px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+  }
 
 .tickets {
     padding-top: 25px;
@@ -61,6 +75,18 @@ button {
     overflow: auto;
     max-width: 100%;
     height: auto; 
+    padding: 0 12px 0 12px;
+}
+
+.picture1,
+.picture2,
+.picture3,
+.picture4,
+.picture5 {
+    float: left;
+    width: 20;
+    height: 30vh;
+    object-fit: cover;
 }
 
 .theDeadlySpawn {

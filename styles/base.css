@@ -15,7 +15,7 @@ body {
 }
 
   header {
-    background-image: url("SVG/header_mobile.svg");
+    background-image: url("./SVG/header_mobile.svg");
     width: 100vw;
     height: 92px;
     position: sticky;
@@ -23,7 +23,6 @@ body {
     left: 0;
     padding: 0px;
     margin: 0px;
-
   }
 
   .header-content {
