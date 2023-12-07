@@ -6,12 +6,26 @@
   --hope: #ecebe4;
 }
 
+@keyframes drip {
+  0% {
+  }
+  50% {
+    background: linear-gradient(#de1a3a 50%, #050e0e 50%);
+  }
+  75% {
+    background: linear-gradient(#de1a3a 75%, #050e0e 25%);
+  }
+  100% {
+    background: linear-gradient(#de1a3a 50%, #050e0e 50%);
+  }
+}
 body {
   background-color: var(--darkness);
   margin: 0px;
   padding: 0px;
   font-family: "Shippori Mincho", serif;
   color: var(--hope);
+  overscroll-behavior: none;
 }
 
 header {
@@ -41,5 +55,111 @@ header {
 .hero {
   width: 90vw;
 }
-/* TODO: constrain svg-headers to resize and fit horizontally, 
-add class to img tags or manipulate monthly- and offer-divs  */
+.below-hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100vw;
+}
+.monthly {
+  width: 17.5rem;
+  margin-left: 10vw;
+}
+.offer {
+  width: 22rem;
+  margin-right: 10vw;
+}
+.more-img {
+  width: 18rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+.upcoming-posters {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+  overflow-x: scroll;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 9.5rem;
+  margin-bottom: 5rem;
+}
+.email-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.email {
+  height: 2rem;
+  width: 18rem;
+  font-size: x-large;
+}
+.submit {
+  background-color: var(--goo);
+  border-radius: 2rem;
+  width: 6rem;
+  height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.social-media-links {
+  margin-top: 1rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+  .below-hero {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .monthly-img {
+    width: 13rem;
+  }
+  .offer-img {
+    width: 13rem;
+  }
+  .offer {
+    width: 13rem;
+    align-self: flex-end;
+  }
+  .more-img {
+    width: 13rem;
+    margin-left: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+  }
+  .email-wrapper {
+    max-width: 90vw;
+  }
+  .email {
+    width: 10rem;
+  }
+  .footer-links {
+    width: 90vw;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+} /* TODO: constrain svg-headers to resize and fit horizontally,
+  add class to img tags or manipulate monthly- and offer-divs */
