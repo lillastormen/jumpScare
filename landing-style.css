@@ -102,7 +102,13 @@ footer {
   font-size: x-large;
 }
 .submit {
-  background-color: var(--goo);
+  background-image: linear-gradient(
+    to bottom,
+    var(--blood) 50%,
+    var(--goo) 50%
+  );
+  background-size: 200% 200%;
+  background-position: bottom;
   border-radius: 2rem;
   width: 6rem;
   height: 2rem;
@@ -110,8 +116,10 @@ footer {
   padding-right: 1.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  transition: 1s;
   &:hover {
     cursor: pointer;
+    background-position: top;
   }
 }
 .social-media-links {
@@ -122,6 +130,21 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   width: 40vw;
+}
+.footer-links > div > p:hover {
+  cursor: pointer;
+}
+@keyframes spooky {
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+.ghost {
+  animation: 2s spooky infinite alternate;
 }
 
 @media screen and (max-width: 800px) {
