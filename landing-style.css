@@ -77,9 +77,15 @@ header {
 .upcoming-posters {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.upcoming-posters > img {
+  scroll-snap-align: center;
 }
 footer {
   display: flex;
