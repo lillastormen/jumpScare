@@ -6,19 +6,13 @@
   --hope: #ecebe4;
 }
 
-@keyframes drip {
+/* @keyframes scare {
   0% {
   }
-  50% {
-    background: linear-gradient(#de1a3a 50%, #050e0e 50%);
-  }
-  75% {
-    background: linear-gradient(#de1a3a 75%, #050e0e 25%);
-  }
   100% {
-    background: linear-gradient(#de1a3a 50%, #050e0e 50%);
+    transform: scale(6) translateX(-7vw) translateY(5vw);
   }
-}
+} */
 body {
   background-color: var(--darkness);
   margin: 0px;
@@ -46,6 +40,9 @@ header {
   padding: 0.2rem;
   padding-left: 0.5rem;
 }
+/* .logo {
+  animation: 1s scare reverse;
+} */
 .heroContainer {
   display: flex;
   align-items: center;
@@ -54,6 +51,16 @@ header {
 }
 .hero {
   width: 90vw;
+}
+a {
+  text-decoration: none;
+  color: var(--hope);
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--blood);
+    transition: 1s;
+  }
 }
 .below-hero {
   display: flex;
@@ -77,9 +84,15 @@ header {
 .upcoming-posters {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.upcoming-posters > img {
+  scroll-snap-align: center;
 }
 footer {
   display: flex;
@@ -102,7 +115,13 @@ footer {
   font-size: x-large;
 }
 .submit {
-  background-color: var(--goo);
+  background-image: linear-gradient(
+    to bottom,
+    var(--blood) 50%,
+    var(--goo) 50%
+  );
+  background-size: 200% 200%;
+  background-position: bottom;
   border-radius: 2rem;
   width: 6rem;
   height: 2rem;
@@ -110,8 +129,10 @@ footer {
   padding-right: 1.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  transition: 1s;
   &:hover {
     cursor: pointer;
+    background-position: top;
   }
 }
 .social-media-links {
@@ -122,6 +143,21 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   width: 40vw;
+}
+.footer-links > div > p:hover {
+  cursor: pointer;
+}
+@keyframes spooky {
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+.ghost {
+  animation: 2s spooky infinite alternate;
 }
 
 @media screen and (max-width: 800px) {
