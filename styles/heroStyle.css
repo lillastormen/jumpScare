@@ -4,7 +4,6 @@ body {
     padding: 0px;
     font-family: "Shippori Mincho", serif;
     color: var(--hope);
-   
 }
 
 .headerContent {
@@ -13,24 +12,21 @@ body {
     justify-content: space-between;
     padding: 0 12px 0 12px;
     position: relative;
-  }
+}
 
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
 }
 
-.heroImage {
-    width: 100vw;
+.heroVideo {
+    width: 100%;
     height: auto;
 }
 
 header {
     width: 100vw;
     height: 92px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0px;
@@ -48,17 +44,28 @@ button {
 
 .redButton {
     background-color: var(--blood);
-    width: 330px;
-    height: 50px;
+    max-width: 300px;
+    width: 65%;
+    height: 60px;
     border: none;
     border-radius: 10px;
     align-items: center;
     display: inline-block;  
 }
 
+.ticketDiv {
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
 .ticketsButton {
     width: 95px;
     height: 35px;
+}
+
+.movies {
+    padding-bottom: 30px;
 }
 
 .movieInfo {
@@ -73,7 +80,7 @@ button {
     overflow: auto;
     max-width: 100%;
     height: auto; 
-    padding: 0 12px 0 12px;
+    padding: 40px 12px 40px 12px;
 }
 
 .picture1,
@@ -98,10 +105,16 @@ button {
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+} 
+
+.newsletterTextDesktop {
+    display: none;
 }
+
 .input{
     height: 30px;
-    width: 200px;
+    width: 80%;
+    max-width: 250px;
     margin: 0;
 }
 
@@ -111,7 +124,6 @@ button {
     border-radius: 20px;
     border: none;
     background-color: var(--goo);
-    
 }
 
 .submitButton {
@@ -126,8 +138,41 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    padding-left: 45px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
 }
 
 footer {
     padding: 0 12px 25px 12px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .headerContent {
+        padding: 0 20px 0 20px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .ticketDiv {
+        grid-column: 2;
+        text-align: center; 
+    }
+    
+    .newsletterText h3 {
+        display: none;
+    }
+
+    .theDeadlySpawnLogo {
+        display: none;
+    }
+
+   
 }

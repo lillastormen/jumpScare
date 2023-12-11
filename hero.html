@@ -21,28 +21,29 @@
     
 <body>
 
-  <container class="container">
+  <header>   
+    <div class="headerContent" style="background-image: url('SVG/header_mobile.svg');">
+      <img class="ghost" src="SVG/Ghostmenu.svg" alt="ghostIcon">
+      <img class="logo" src="SVG/Logo.svg" alt="JSlogo">
+    </div>
+  </header>
 
-    <header>   
-      <div class="headerContent" style="background-image: url('SVG/header_mobile.svg');">
-        <img class="ghost" src="SVG/Ghostmenu.svg" alt="ghostIcon">
-        <img class="logo" src="SVG/Logo.svg" alt="JSlogo">
-      </div>
-    </header>
-      
+  <container class="container">
+    
     <section class="hero"> 
-   <img class="heroImage" src="movie-posters/deadly-spawn.png" alt="deadlySpawnPoster">   <!-- TODO: add a video-->
+      <video class="heroVideo" controls>
+        <source src="https://ia803108.us.archive.org/5/items/sinema-trailer_the-deadly-spawn/The%20Deadly%20Spawn%20%281983%29%20Trailer.%20%28480p_30fps_H264-128kbit_AAC%29.mp4">
+      </video>
     </section>
       
-    <section class="tickets"> 
+    <section class="movies">
+
       <div class="ticketDiv">
         <button class="redButton">
           <img class="ticketsButton" src="SVG/TICKETS.svg">
         </button>
-    </div>
-    </section>
-    
-    <section class="movies">
+      </div>
+
       <section class="movieInfo"> 
         <p>Alien creatures invade a small town and four teenagers, along with a young boy, attempt to escape from them.</p><br>
         <h3>Director</h3> <p>Douglas McKeown</p><br>
@@ -83,11 +84,13 @@
     </section>
       
    
-      
     <footer class="footer"> 
       <div class="newsletter">
         <div class="newsletterText">
           <h3>Subscribe: </h3>
+        </div>
+        <div class="newsletterTextDesktop">
+          <h3>Subscribe to our newsletter to not miss any upcoming events: </h3>
         </div>
         <div class="newsletterForm">
           <input type="email" class="input" placeholder="E-mail...">
