@@ -139,8 +139,8 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding-left: 45px;
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
 }
 
 footer {
@@ -153,10 +153,6 @@ footer {
         padding: 0 20px 0 20px;
     }
     
-    p {
-        font-size: 18px;
-    }
-
     h3 {
         font-size: 20px;
     }
@@ -166,8 +162,11 @@ footer {
         text-align: center; 
     }
     
-    .newsletterText h3 {
+    .newsletterText {
         display: none;
+    }
+    .newsletterTextDesktop {
+        display: block;
     }
 
     .theDeadlySpawnLogo {

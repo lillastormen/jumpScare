@@ -64,11 +64,10 @@
 
 .newsletter {
   grid-area: newsletter;
+  display:grid;
+  align-content: center;
 }
 
-.socials {
-  grid-area: socials;
-}
 
 .footerInfo {
   grid-area: footerInfo;
@@ -94,8 +93,7 @@
     grid-template-rows: auto;
     grid-auto-flow: column;
     grid-template-areas: 
-    "newsletter footerInfo"
-    "socials footerInfo";
+    "newsletter footerInfo";
     padding-top: 150px;
   }
 
